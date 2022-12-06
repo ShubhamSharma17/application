@@ -115,13 +115,15 @@ class _HomePageState extends State<HomePage> {
                                     Icons.person,
                                   ),
                                   SizedBox(width: 10),
-                                  Text(
-                                    list[index].author != 'null'
-                                        ? list[index].author
-                                        : 'Not Available',
-                                    style: TextStyle(
-                                      fontSize: 15,
-                                      // fontWeight: FontWeight.w500,
+                                  Expanded(
+                                    child: Text(
+                                      list[index].author != 'null'
+                                          ? list[index].author
+                                          : 'Not Available',
+                                      style: TextStyle(
+                                        fontSize: 15,
+                                        // fontWeight: FontWeight.w500,
+                                      ),
                                     ),
                                   )
                                 ],
